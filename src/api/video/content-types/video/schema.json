@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos",
+  "info": {
+    "singularName": "video",
+    "pluralName": "videos",
+    "displayName": "Videos"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "youtubeEmbed": {
+      "type": "customField",
+      "customField": "plugin::oembed.oembed"
+    },
+    "ogPublishDate": {
+      "type": "date"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.tags"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
