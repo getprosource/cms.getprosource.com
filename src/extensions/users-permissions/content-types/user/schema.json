@@ -62,23 +62,6 @@
       "target": "plugin::users-permissions.role",
       "inversedBy": "users",
       "configurable": false
-    },
-    "displayName": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "jobTitle": {
-      "type": "string",
-      "required": true
-    },
-    "avatar": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
     }
   }
 }
