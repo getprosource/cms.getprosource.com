@@ -2,8 +2,8 @@
   "name": "@getprosource/cms.getprosource.com",
   "private": true,
   "scripts": {
-    "start": "strapi develop",
-    "preview": "strapi start",
+    "dev": "strapi develop",
+    "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
   },
