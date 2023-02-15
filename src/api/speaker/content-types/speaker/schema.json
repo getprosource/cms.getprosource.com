@@ -1,37 +1,40 @@
 {
-  "collectionName": "components_webinars_speakers",
+  "kind": "collectionType",
+  "collectionName": "speakers",
   "info": {
+    "singularName": "speaker",
+    "pluralName": "speakers",
     "displayName": "Speakers",
     "description": ""
   },
-  "options": {},
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "jobTitle": {
+    "title": {
       "type": "string",
       "required": true
     },
     "company": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "website": {
       "type": "string",
-      "regex": "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?",
-      "required": true,
-      "unique": false
+      "required": true
     },
     "avatar": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
