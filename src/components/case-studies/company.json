@@ -1,22 +1,23 @@
 {
   "collectionName": "components_case_studies_companies",
   "info": {
-    "displayName": "Company"
+    "displayName": "Company",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "name": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "logo": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": false
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "industry": {
       "type": "enumeration",

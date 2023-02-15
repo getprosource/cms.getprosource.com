@@ -4,7 +4,8 @@
   "info": {
     "singularName": "video",
     "pluralName": "videos",
-    "displayName": "Videos"
+    "displayName": "Videos",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -26,14 +27,14 @@
     "ogPublishDate": {
       "type": "date"
     },
-    "tags": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.tags"
-    },
     "content": {
       "type": "richtext",
       "required": true
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::member.member"
     }
   }
 }

@@ -4,12 +4,17 @@
   "info": {
     "singularName": "value",
     "pluralName": "values",
-    "displayName": "Our Values"
+    "displayName": "Our Values",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",
@@ -24,16 +29,17 @@
       "type": "date"
     },
     "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "author": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+      "target": "api::member.member"
     },
     "content": {
       "type": "richtext",

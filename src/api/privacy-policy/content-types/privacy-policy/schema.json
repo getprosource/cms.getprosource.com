@@ -8,9 +8,13 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",
@@ -24,9 +28,6 @@
     },
     "ogPublishDate": {
       "type": "date"
-    },
-    "description": {
-      "type": "text"
     }
   }
 }

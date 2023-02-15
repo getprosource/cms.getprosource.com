@@ -19,7 +19,7 @@
     },
     "ogPublishDate": {
       "type": "date",
-      "required": true
+      "required": false
     },
     "youtubeEmbed": {
       "type": "customField",
@@ -29,19 +29,14 @@
       "type": "richtext",
       "required": true
     },
-    "tags": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.tags"
-    },
-    "speakers": {
-      "type": "component",
-      "repeatable": true,
-      "component": "webinars.speakers"
-    },
     "description": {
       "type": "text",
       "required": true
+    },
+    "speakers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::speaker.speaker"
     }
   }
 }

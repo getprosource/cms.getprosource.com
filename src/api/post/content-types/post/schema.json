@@ -30,19 +30,19 @@
     "ogPublishDate": {
       "type": "date"
     },
-    "author": {
+    "authors": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+      "relation": "oneToMany",
+      "target": "api::member.member"
     },
     "content": {
       "type": "richtext",
       "required": true
     },
-    "tags": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.tags"
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }

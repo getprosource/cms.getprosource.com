@@ -4,12 +4,17 @@
   "info": {
     "singularName": "term",
     "pluralName": "terms",
-    "displayName": "Terms & Conditions"
+    "displayName": "Terms & Conditions",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",

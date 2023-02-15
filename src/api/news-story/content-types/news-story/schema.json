@@ -41,14 +41,14 @@
         "images"
       ]
     },
-    "tags": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.tags"
-    },
     "content": {
       "type": "richtext",
       "required": true
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::member.member"
     }
   }
 }
