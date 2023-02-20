@@ -28,6 +28,14 @@
     "content": {
       "type": "richtext",
       "required": true
+    },
+    "slug": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "uid"
     }
   }
 }

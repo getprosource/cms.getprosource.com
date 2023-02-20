@@ -37,6 +37,9 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::speaker.speaker"
+    },
+    "slug": {
+      "type": "uid"
     }
   }
 }

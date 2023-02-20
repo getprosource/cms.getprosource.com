@@ -35,6 +35,9 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::member.member"
+    },
+    "slug": {
+      "type": "uid"
     }
   }
 }

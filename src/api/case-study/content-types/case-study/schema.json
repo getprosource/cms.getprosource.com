@@ -42,9 +42,7 @@
       "required": true
     },
     "slug": {
-      "type": "uid",
-      "targetField": "title",
-      "required": true
+      "type": "uid"
     }
   }
 }
