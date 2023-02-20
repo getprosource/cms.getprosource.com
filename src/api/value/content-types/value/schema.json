@@ -36,14 +36,14 @@
         "images"
       ]
     },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
     "author": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::member.member"
-    },
-    "content": {
-      "type": "richtext",
-      "required": true
     }
   }
 }
