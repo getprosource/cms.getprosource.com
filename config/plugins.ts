@@ -19,15 +19,7 @@ module.exports = ({ env }) => ({
           field: "slug",
           references: "title",
         },
-        "privacy-policy": {
-          field: "slug",
-          references: "title",
-        },
         term: {
-          field: "slug",
-          references: "title",
-        },
-        value: {
           field: "slug",
           references: "title",
         },
