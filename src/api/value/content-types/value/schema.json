@@ -44,6 +44,16 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::member.member"
+    },
+    "slug": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }

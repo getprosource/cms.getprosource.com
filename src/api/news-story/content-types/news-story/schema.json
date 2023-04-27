@@ -51,7 +51,9 @@
       "target": "api::member.member"
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }

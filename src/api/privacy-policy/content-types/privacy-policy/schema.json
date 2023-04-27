@@ -28,6 +28,16 @@
     },
     "ogPublishDate": {
       "type": "date"
+    },
+    "slug": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }
