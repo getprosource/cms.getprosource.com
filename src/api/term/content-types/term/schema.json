@@ -25,17 +25,28 @@
       "type": "date",
       "required": true
     },
-    "content": {
-      "type": "richtext",
-      "required": true
-    },
     "slug": {
       "pluginOptions": {
         "versions": {
           "versioned": true
         }
       },
-      "type": "uid"
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "document": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ],
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      }
     }
   }
 }
