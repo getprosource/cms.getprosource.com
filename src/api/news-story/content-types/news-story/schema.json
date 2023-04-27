@@ -23,10 +23,10 @@
     "category": {
       "type": "enumeration",
       "enum": [
-        "employee spotlight",
-        "partner spotlight",
-        "press release",
-        "service announcement"
+        "Employee Spotlight",
+        "Partner Spotlight",
+        "Press Release",
+        "Service Announcement"
       ],
       "required": true
     },
