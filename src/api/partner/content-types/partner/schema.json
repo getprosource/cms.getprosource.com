@@ -4,7 +4,8 @@
   "info": {
     "singularName": "partner",
     "pluralName": "partners",
-    "displayName": "Partners"
+    "displayName": "Partners",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,20 +20,29 @@
     "description": {
       "type": "richtext",
       "required": true,
-      "maxLength": 160
+      "maxLength": 200
     },
     "logo": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "url": {
       "type": "string",
       "required": true,
       "regex": "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "business_partner",
+        "distribution_partner",
+        "technology_partner"
+      ],
+      "required": true
     }
   }
 }
