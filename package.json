@@ -16,15 +16,12 @@
     "strapi-plugin-oembed": "^1.0.1",
     "strapi-plugin-slugify": "^2.3.2"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
   "strapi": {
-    "uuid": "08a95aeb-8e49-4048-91f4-c7e8e690cc35"
+    "uuid": "08a95aeb-8e49-4048-91f4-c7e8e690cc35",
+    "telemetryDisabled": true
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
-  },
-  "license": "MIT"
+  }
 }
